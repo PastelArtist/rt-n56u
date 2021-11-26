@@ -34,7 +34,7 @@ jobs:
       run: |
         echo 'current dir':$(pwd)
         sed -i 's/192.168.2/192.168.11/g' trunk/user/shared/defaults.h
-        cat trunk/user/shared/defaults.h
+        echo 'cat trunk/user/shared/defaults.h':$(cat trunk/user/shared/defaults.h)
         cd toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
