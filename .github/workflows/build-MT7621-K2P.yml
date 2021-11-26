@@ -1,8 +1,10 @@
 name: Build MT7621-K2P
 
 on: 
-  release:
-    types: [published]
+  repository_dispatch:
+  workflow_dispatch:
+#  release:
+#    types: [published]
 #  push:
 #    tags:
 #    - 'v*'
