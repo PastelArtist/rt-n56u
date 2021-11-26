@@ -32,6 +32,8 @@ jobs:
         pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget
     - name: Clone source code
       run: |
+        echo 'pwd'
+        pwd
         sed -i 's/192.168.2/192.168.11/g' rt-n56u/trunk/user/shared/defaults.h
         cat rt-n56u/trunk/user/shared/defaults.h
         cd toolchain-mipsel
