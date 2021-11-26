@@ -3,8 +3,8 @@ name: Build MT7620-PSG1218
 on: 
   repository_dispatch:
   workflow_dispatch:
-#  release:
-#    types: [published]
+  release:
+    types: [published]
 #  push:
 #    tags:
 #    - 'v*'
