@@ -1,8 +1,10 @@
 name: Build MT7620-YK-L1
 
 on: 
-  release:
-    types: [published]
+  repository_dispatch:
+  workflow_dispatch:
+#  release:
+#    types: [published]
 #  push:
 #    tags:
 #    - 'v*'
