@@ -32,7 +32,8 @@ jobs:
         pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget
     - name: Clone source code
       run: |
-        echo 'current dir':$(pwd)
+        echo 'current dir':
+        pwd
         sed -i 's/192.168.2/192.168.11/g' trunk/user/shared/defaults.h
         echo 'cat trunk/user/shared/defaults.h':
         cat trunk/user/shared/defaults.h
